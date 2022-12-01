@@ -1,5 +1,5 @@
 :root{
-    --pink:rgba(206,119,119) ;
+    --pink:#e84393;
 }
 
 *{
@@ -51,7 +51,6 @@ section{
     background:var(--pink);
 }
 
-/*header section starts*/
 header{
     position: fixed;
     top:0; left:0; right:0;
@@ -108,7 +107,6 @@ header .fa-bars{
     display: none;
 }
 
-/*home section starts*/
 .home{
     display: flex;
     align-items: center;
@@ -141,7 +139,6 @@ header .fa-bars{
     line-height: 1.5;
 }
 
-/*about section starts*/
 .about .row{
     display: flex;
     align-items: center;
@@ -193,7 +190,6 @@ header .fa-bars{
     line-height: 1.5;
 }
 
-/*icon section starts*/
 .icons-container{
     background:#eee;
     display: flex;
@@ -227,8 +223,6 @@ header .fa-bars{
     color:#555;
     font-size: 1.3rem;
 }
-
-/*product section starts*/
 
 .products .box-container{
     display: flex;
@@ -329,8 +323,6 @@ header .fa-bars{
     gap:1.5rem;
 }
 
-/*review section starts*/
-
 .review .box-container .box{
     flex:1 1 30rem;
     box-shadow: 0 .5rem 1.5rem rgba(0,0,0,.1);
@@ -353,7 +345,7 @@ header .fa-bars{
 }
 
 .review .box-container .box p{
-    color:rgb(0, 0, 0);
+    color:#999;
     font-size: 1.5rem;
     line-height: 1.5;
     padding-top: 2rem;
@@ -375,15 +367,13 @@ header .fa-bars{
 
 .review .box-container .box .user h3{
     font-size: 2rem;
-    color:rgb(0, 0, 0);
+    color:#333;
 }
 
 .review .box-container .box .user span{
     font-size: 1.5rem;
     color:#999;
 }
-
-/*contact section starts*/
 
 .contact .row{
     display: flex;
@@ -406,7 +396,7 @@ header .fa-bars{
 }
 
 .contact .row .image img{
-    width: 80%;
+    width: 100%;
 }
 
 .contact .row form .box{
@@ -434,8 +424,6 @@ header .fa-bars{
     flex-wrap: wrap;
     gap:1.5rem;
 }
-
-/*footer section starts*/
 
 .footer .box-container .box{
     flex:1 1 25rem;
@@ -476,82 +464,4 @@ header .fa-bars{
 
 .footer .credit span{
     color:var(--pink);
-}
-
-
-/* media queries*/
-@media (max-width:991px){
-    
-    html{
-        font-size: 55%;
-    }
-
-    header{
-        padding:2rem;
-    }
-
-    section{
-        padding:2rem;
-    }
-
-    .home{
-        background-position: left;
-    }
-
-}
-
-@media (max-width:768px){
-
-    header .fa-bars{
-        display: block;
-    }
-
-    header .navbar{
-        position:absolute;
-        top:100%; left:0; right:0;
-        background:#eee;
-        border-top: .1rem solid rgba(0,0,0,.1);
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    header #toggler:checked ~ .navbar{
-        clip-path:polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    header .navbar a{
-        margin:1.5rem;
-        padding:1.5rem;
-        background:#fff;
-        border:.1rem solid rgba(0,0,0,.1);
-        display: block;
-    }
-
-    .home .content h3{
-        font-size: 5rem;
-    }
-
-    .home .content span{
-        font-size: 2.5rem;
-    }
-
-    .icons-container .icons h3{
-        font-size: 2rem;
-    }
-    
-    .icons-container .icons span{
-        font-size: 1.7rem;
-    }
-    
-}
-
-@media (max-width:450px){
-    
-    html{
-        font-size: 50%;
-    }
-
-    .heading{
-        font-size: 3rem;
-    }
-
 }
